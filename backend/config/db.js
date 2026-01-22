@@ -12,10 +12,10 @@ const pool = new Pool( {
 
 pool.connect((err, client, release) => {
     if (err) {
-        console.error('Veritabanı bağlantı hatası: ', err);
+        console.error('Database connection error: ', err);
         return;
     }
-    console.log('Veritabanı bağlantısı başarılı.')
+    console.log('Database connection is successfull.')
     release();
 });
 
